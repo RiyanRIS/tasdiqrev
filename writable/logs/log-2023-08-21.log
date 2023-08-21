@@ -1,0 +1,250 @@
+INFO - 2023-08-21 06:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-21 06:09:39 --> Call to undefined function App\Controllers\Admin\is_login()
+in APPPATH\Controllers\Admin\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 06:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-21 06:10:49 --> mysqli_sql_exception: Table 'ci4_tasdiqrev.tbl_admin' doesn't exist in C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\riyan\Documents\My\ci4\tasdiqrev\app\Models\AuthModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\riyan\Documents\My\ci4\tasdiqrev\app\Controllers\Admin\Auth.php(28): App\Models\AuthModel->login('admin', 'admin')
+#6 C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\CodeIgniter.php(932): App\Controllers\Admin\Auth->login()
+#7 C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\riyan\Documents\My\ci4\tasdiqrev\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\riyan\Documents\My\ci4\tasdiqrev\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\...')
+#11 {main}
+CRITICAL - 2023-08-21 06:10:49 --> Table 'ci4_tasdiqrev.tbl_admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tbl_admin`
+WHERE `username` = \'admin\'
+ORDER BY `id_admin` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_admin`
+WHERE `username` = \'admin\'
+ORDER BY `id_admin` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_admin`
+WHERE `username` = \'admin\'
+ORDER BY `id_admin` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_admin`
+WHERE `username` = :username:
+ORDER BY `id_admin` DESC
+ LIMIT 1', [...], false)
+ 5 APPPATH\Models\AuthModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin\Auth.php(28): App\Models\AuthModel->login('admin', 'admin')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 06:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-21 06:29:28 --> Invalid file: "admin/templates/head.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/templates/head.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/templates/head', [], true)
+ 3 APPPATH\Views\admin\home\index.php(5): view('admin/templates/head')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 7 APPPATH\Controllers\Admin\Home.php(33): view('admin/home/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 06:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-21 06:30:50 --> Undefined variable: angkatans
+in APPPATH\Views\admin\home\index.php on line 77.
+ 1 APPPATH\Views\admin\home\index.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: angkatans', 'C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php', 77, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 5 APPPATH\Controllers\Admin\Home.php(33): view('admin/home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 06:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-21 06:31:05 --> Undefined variable: angkatans
+in APPPATH\Views\admin\home\index.php on line 77.
+ 1 APPPATH\Views\admin\home\index.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: angkatans', 'C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php', 77, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 5 APPPATH\Controllers\Admin\Home.php(33): view('admin/home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 06:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-21 06:31:19 --> Undefined variable: angkatans
+in APPPATH\Views\admin\home\index.php on line 77.
+ 1 APPPATH\Views\admin\home\index.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: angkatans', 'C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php', 77, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 5 APPPATH\Controllers\Admin\Home.php(33): view('admin/home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 06:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 06:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-21 07:23:42 --> A non well formed numeric value encountered
+in APPPATH\Views\admin\home\index.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well formed numeric value encountered', 'C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php', 83, [...])
+ 2 APPPATH\Views\admin\home\index.php(83): date('d F Y', '2023-08-01')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 6 APPPATH\Controllers\Admin\Home.php(34): view('admin/home/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 07:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-21 07:24:04 --> A non well formed numeric value encountered
+in APPPATH\Views\admin\home\index.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well formed numeric value encountered', 'C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php', 84, [...])
+ 2 APPPATH\Views\admin\home\index.php(84): date('d F Y', '2023-09-20')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 6 APPPATH\Controllers\Admin\Home.php(34): view('admin/home/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 07:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-21 07:31:23 --> Undefined index: kuota
+in APPPATH\Views\admin\home\index.php on line 87.
+ 1 APPPATH\Views\admin\home\index.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kuota', 'C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php', 87, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\app\\Views\\admin\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/home/index', [], true)
+ 5 APPPATH\Controllers\Admin\Home.php(34): view('admin/home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\riyan\\Documents\\My\\ci4\\tasdiqrev\\public\\index.php')
+INFO - 2023-08-21 07:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 07:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 08:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
